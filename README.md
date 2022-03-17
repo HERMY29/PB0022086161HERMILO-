@@ -8,9 +8,9 @@ using namespace std;
 
 struct cita
 {
-    char NdP [100], HdT, tratamiento[100], desc[100];
+    char NdP [100], HdT [100], tratamiento[100], desc[100];
     float T = 0, PreU, PUT;
-    int opcion, HdT, CdT;
+    int opcion, CdT;
 
 };
 
@@ -40,31 +40,31 @@ int main()
                 cout << "Numero de registro: " << i + 1 << endl;
                 cout << " Ingrese el nombre del paciente" << endl;
                 cin >> cliente[i].NdP;
-                cin.getline(cliente[i].NdP , 100, '\n');
+                
 
                 cout << " Ingrese el tratamiento" << endl;
                 cin >> cliente[i].tratamiento;
-                cin.getline(cliente[i].tratamiento, 100, '\n');
+                
 
                 cout << " Ingrese la hora de tratamiento" << endl;
                 cin >> cliente[i].HdT;
-                cin.getline(cliente[i].HdT, 100, '\n');
+                
 
                 cout << " Ingrese la descripcion del tratamiento" << endl;
                 cin >> cliente[i].desc;
-                cin.getline(cliente[i].desc, 100, '\n');
+                
 
                 cout << " Ingrese el precio unitario del tratamiento" << endl;
                 cin >> cliente[i].PUT;
-                cin.getline(cliente[i].PUT, 100, '\n');
+                
 
                 cout << " Ingrece el precio unitario" << endl;
                 cin >> cliente[i].PreU;
-                cin.getline(cliente[i].PreU, 100, '\n');
+               
 
                 cout << " Ingrese la cantidad del tratamiento" << endl;
                 cin >> cliente[i].CdT;
-                cin.getline(cliente[i].CdT, 100, '\n');
+               
                
                 cout << " ---------------------- " << endl;
                 cliente[i].T = cliente[i].PreU * cliente[i].CdT;
@@ -88,14 +88,14 @@ int main()
             {
                 cout<< "------------------------" << endl;
                 cout << "Numero de registro: " << i + 1 << endl;
-                cout<< cliente[i].NdP <<endl;
-                cout<< cliente[i].tratamiento <<endl;
-                cout<< cliente[i].HdT <<endl;
-                cout<< cliente[i].desc <<endl;
-                cout<< cliente[i].PUT <<endl;
-                cout<< cliente[i].PreU <<endl;
-                cout<< cliente[i].CdT <<endl;
-                cout<< cliente[i].T <<endl;
+                cout << "Nombre del paciente: " << cliente[i].NdP << endl;
+                cout << "Tratamiento: " << cliente[i].tratamiento << endl;
+                cout << "Hora de tratamiento: " << cliente[i].HdT << endl;
+                cout << "Descripcion: " << cliente[i].desc << endl;
+                cout << "Precio unitario de Tratamiento: " << cliente[i].PUT << endl;
+                cout << "Precio unitario: " << cliente[i].PreU << endl;
+                cout << "Cantidad de tratamiento: " << cliente[i].CdT << endl;
+                cout<< "Total: " << cliente[i].T << endl;
                 
                 
             }
